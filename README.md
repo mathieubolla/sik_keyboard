@@ -6,17 +6,17 @@ The SIK (named after a 80s' video game, look at it, you'll guess) is an ergonomi
 
 You can build it at any decent maker space, given some parts (switches, keycaps, diodes, microcontroler, cables, some plastics, and screws) and skills (soldering, running a laser cutter, screwing)
 
-You can program it to your likings, given some (free) software (the PJRC Teensy toolchain), and skills (some very basic C coding, or skilled search-and-replace for the simplest modifications)
+You can program it to your liking, given some (free) software ([the PJRC Teensy toolchain](https://www.pjrc.com/teensy/gcc.html)), and skills (some very basic C coding, or skilled search-and-replace for the simplest modifications)
 
 ## Pictures
 
 An ergonomic keyboard, no larger than your regular laptop keyboard
 ![Global look](doc/images/final-1.jpg)
 
-Industrial look and feel, if you wish (may also be wooden made, with stitches, you're call)
+Industrial look and feel, if you wish (may also be wooden made, with stitches, your call)
 ![Close-up](doc/images/final-2.jpg)
 
-mac-fr layout with mixed french-englih-java key placement (or any other layout you build in it) and tap action keys (you tap, you get a letter, you hold, you get your function keys)
+mac-fr layout with mixed french-englih-java key placement (or any other layout you build in it) and tap action keys (you tap, you get a letter, you hold, you get a function keys)
 ![Layout](doc/images/layout.png)
 
 Hand made, with some coffee (was it tea?) and an apple (or whatever you take at breakfast)
@@ -50,7 +50,7 @@ Plug it in the first available USB port at hand
 
 And `./build.sh`
 
-If it won't work, sorry, I'm really bad at knowing your setup. Try an issue, or maybe ask the guys at TMK, they made the magic happen...
+If it won't work, sorry, I'm really bad at knowing your setup. Try an issue, or maybe ask the guys at [TMK]((https://github.com/tmk/tmk_core)), they made the magic happen, they rock...
 
 If you want another layout, think about it (twice?), then edit keymap_qwerty.c to match what you have in mind.
 
