@@ -26,6 +26,22 @@ Hand made, with some coffee (was it tea?) and an apple (or whatever you take at 
 
 It is mostly an hand-wired Atreus. They have a good guide [there](https://atreus.technomancy.us/assembly-hand-wired.pdf) But I will soon add a detailed guide, if you require it (add an issue about it, vote for it, I'll do it)
 
+To find out what is your laser cutter kerf, you may use the [hardware/kerf_guess.svg](hardware/kerf_guess.svg) It will build a plate where the kerf is believed to be 0mm in the center, offset by 0.1mm every step as you go outwards, with added 0.05 for all to the right. Try your switches center left, then center right, then one more to the left, one more to the right, and on and on. Where it fits best, go to the drawing and find out the size of the cutting you need. I needed 13.6mm for my 14mm switches. Your mileage will vary.
+
+Once that is known, the keyboard is just a sandwitch:
+
+These two are linked together when soldering the switches. Dont forget the second one before soldering, you can't add it later.
+- 1.5mm PMMA base plate: ![Base plate](hardware/base_plate.png)
+- 4mm PMMA supporting plate:  ![Supporting plate](hardware/supporting_plate.png)
+
+Once that is built, follow Atreus guide for soldering. Specific pin instructions are hiden in [here](matrix.c). Read carefully while soldering (and before).
+
+Then, to close the case:
+- 5mm plywood spacer: ![Spacer](hardware/spacer.png)
+- 4mm PMMA bottom: ![Bottom](hardware/bottom.png)
+
+Finally, screw it: 9 M3 25mm screws will do the job. Use whatever orientation you find is the nicest.
+
 ## How to program it
 
 Checkout this repository (don't forget, there are submodules, may the `git clone --recursive` be with you)
