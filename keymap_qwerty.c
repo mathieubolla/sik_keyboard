@@ -7,8 +7,8 @@ Copyright 2016 Mathieu Bolla <mathieu.bolla@gmail.com>
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP(
       KC_M,     KC_G, KC_F, KC_V, KC_P7,    KC_P8,  KC_P9,  KC_A, KC_B, KC_H,   KC_COMM,KC_NO,    KC_NO,
-      KC_R,     KC_T, KC_Q, KC_E, KC_P4,    KC_P5,  KC_P6,  KC_S, KC_I, KC_N,   KC_U,   KC_BSPC,  KC_TAB,
-      KC_EQL,   KC_P, KC_D, KC_L, KC_P1,    KC_P2,  KC_P3,  KC_O, KC_C, KC_SCLN,KC_SLSH, KC_LGUI,  KC_LSFT,
+      KC_EQL,   KC_T, KC_Q, KC_E, KC_P4,    KC_P5,  KC_P6,  KC_S, KC_I, KC_N,   KC_SLSH,KC_BSPC,  KC_TAB,
+      KC_R,     KC_P, KC_D, KC_L, KC_P1,    KC_P2,  KC_P3,  KC_O, KC_C, KC_SCLN,KC_U,   KC_LGUI,  KC_LSFT,
       KC_LCTL,  KC_Z, KC_Y, KC_J, KC_LALT,  KC_P0,  KC_ENT, KC_X, KC_W, KC_K,   KC_ESC, KC_FN1,   KC_FN2),
   KEYMAP(
       KC_FN0,   KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_HOME, KC_UP,   KC_PGUP, KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS, KC_NO,    KC_NO,
