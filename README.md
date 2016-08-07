@@ -28,7 +28,7 @@ It is mostly an hand-wired Atreus. They have a good guide [there](https://atreus
 
 To find out what is your laser cutter kerf, you may use the [hardware/kerf_guess.svg](hardware/kerf_guess.svg) It will build a plate where the kerf is believed to be 0mm in the center, offset by 0.1mm every step as you go outwards, with added 0.05 for all to the right. Try your switches center left, then center right, then one more to the left, one more to the right, and on and on. Where it fits best, go to the drawing and find out the size of the cutting you need. I needed 13.6mm for my 14mm switches. Your mileage will vary.
 
-Once that is known, the keyboard is just a sandwitch:
+Once that is known, the keyboard is just a sandwich:
 
 These two are linked together when soldering the switches. Dont forget the second one before soldering, you can't add it later.
 - 1.5mm PMMA base plate: ![Base plate](hardware/base_plate.png)
