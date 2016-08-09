@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_FN0,   KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_HOME, KC_UP,   KC_PGUP, KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS, KC_NO,    KC_NO,
       KC_NUBS,  KC_LBRC,   KC_QUOT,   KC_DOT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NUHS,  KC_RBRC,  KC_MINS,  KC_TRNS, KC_TRNS,  KC_TRNS,
       KC_1,     KC_2,      KC_3,      KC_4,     KC_END,  KC_TRNS, KC_PGDN, KC_5,     KC_6,     KC_7,     KC_8,    KC_TRNS,  KC_TRNS,
-      KC_TRNS,  KC_TRNS,   KC_GRV,    KC_9,     KC_TRNS, KC_TRNS, KC_TRNS, KC_0,     KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS,  KC_TRNS),
+      KC_TRNS,  KC_TRNS,   KC_GRV,    KC_9,     KC_TRNS, KC_TRNS, KC_TRNS, KC_0,     KC_TRNS,  KC_TRNS,  KC_FN3, KC_TRNS,  KC_TRNS),
   KEYMAP(
       KC_FN0,   KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_F7,    KC_F8,   KC_F9,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO,
       KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_F4,    KC_F5,   KC_F6,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
@@ -25,7 +25,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM fn_actions[] = {
   [0] = ACTION_FUNCTION(BOOTLOADER),
   [1] = ACTION_LAYER_MOMENTARY(1),
-  [2] = ACTION_LAYER_TAP_KEY(2, KC_Z)
+  [2] = ACTION_LAYER_TAP_KEY(2, KC_Z),
+  [3] = ACTION_MODS_KEY(MOD_LSFT|MOD_LCTL, KC_POWER)
 };
 
 void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)
