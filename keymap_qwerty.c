@@ -8,13 +8,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP(
       KC_M,     KC_G,  KC_F, KC_V, KC_HOME, KC_UP,   KC_PGUP, KC_A, KC_B, KC_H,   KC_COMM,KC_NO,    KC_NO,
       KC_EQL,   KC_T,  KC_Q, KC_E, KC_LEFT, KC_DOWN, KC_RGHT, KC_S, KC_I, KC_N,   KC_SLSH,KC_LALT,  KC_TAB,
-      KC_Z,     KC_U,  KC_D, KC_L, KC_END,  KC_NO,   KC_PGDN, KC_O, KC_C, KC_SCLN,KC_P,   KC_FN1,   KC_SPC,
-      KC_LCTL,  KC_FN2,KC_Y, KC_J, KC_BSPC, KC_NO,   KC_ENT,  KC_X, KC_W, KC_K,   KC_ESC, KC_LGUI,  KC_LSFT),
+      KC_Z,     KC_U,  KC_D, KC_L, KC_END,  KC_ESC,  KC_PGDN, KC_O, KC_C, KC_SCLN,KC_P,   KC_FN1,   KC_SPC,
+      KC_0,     KC_FN2,KC_Y, KC_J, KC_BSPC, KC_LCTL, KC_ENT,  KC_X, KC_W, KC_K,   KC_2,   KC_LGUI,  KC_LSFT),
   KEYMAP(
       KC_FN0,   KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_P7,   KC_P8, KC_P9,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS, KC_NO,    KC_NO,
       KC_NUBS,  KC_LBRC,   KC_QUOT,   KC_DOT,   KC_P4,   KC_P5, KC_P6,   KC_NUHS,  KC_RBRC,  KC_MINS,  KC_TRNS, KC_TRNS,  KC_TRNS,
-      KC_1,     KC_2,      KC_3,      KC_4,     KC_P1,   KC_P2, KC_P3,   KC_5,     KC_6,     KC_7,     KC_8,    KC_TRNS,  KC_TRNS,
-      KC_TRNS,  KC_TRNS,   KC_GRV,    KC_9,     KC_TRNS, KC_P0, KC_TRNS, KC_0,     KC_TRNS,  KC_TRNS,  KC_FN3, KC_TRNS,  KC_TRNS),
+      KC_1,     KC_TRNS,      KC_3,   KC_4,     KC_P1,   KC_P2, KC_P3,   KC_5,     KC_6,  KC_TRNS,  KC_8,    KC_TRNS,  KC_TRNS,
+      KC_7,     KC_TRNS,   KC_GRV,    KC_9,     KC_TRNS, KC_P0, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_FN3,  KC_TRNS,  KC_TRNS),
   KEYMAP(
       KC_FN0,   KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_F7,    KC_F8,   KC_F9,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO,
       KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,  KC_F4,    KC_F5,   KC_F6,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
