@@ -11,7 +11,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_Z,       KC_U,      KC_D,      KC_L,   KC_END,   KC_ESC,  KC_PGDN,     KC_O,     KC_C,  KC_SCLN,     KC_P,   KC_FN1,   KC_SPC,
       KC_0,     KC_FN2,      KC_Y,      KC_J,  KC_BSPC,  KC_LCTL,   KC_ENT,     KC_X,     KC_W,     KC_K,     KC_2,  KC_LGUI,  KC_LSFT),
   KEYMAP(
-      KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,    KC_P7,    KC_P8,    KC_P9,  KC_TRNS,  KC_TRNS,  KC_TRNS,     KC_6,    KC_NO,    KC_NO,
+      KC_TRNS,   KC_FN7,   KC_FN8,    KC_FN6,    KC_P7,    KC_P8,    KC_P9,  KC_TRNS,  KC_TRNS,  KC_TRNS,     KC_6,    KC_NO,    KC_NO,
       KC_NUBS,  KC_LBRC,  KC_QUOT,    KC_DOT,    KC_P4,    KC_P5,    KC_P6,     KC_5,  KC_RBRC,  KC_MINS,  KC_SLSH,  KC_TRNS,  KC_TRNS,
       KC_1,     KC_TRNS,     KC_3,    KC_GRV,    KC_P1,    KC_P2,    KC_P3,  KC_NUHS,     KC_9,  KC_TRNS,     KC_8,  KC_TRNS,  KC_TRNS,
       KC_7,     KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,    KC_P0,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_FN4,   KC_FN3,  KC_TRNS,  KC_TRNS),
@@ -38,7 +38,10 @@ const uint16_t PROGMEM fn_actions[] = {
   [2] = ACTION_LAYER_TAP_KEY(4, KC_R),
   [3] = ACTION_MODS_KEY(MOD_LSFT|MOD_LCTL, KC_POWER),
   [4] = ACTION_LAYER_TOGGLE(2),
-  [5] = ACTION_LAYER_MOMENTARY(3)
+  [5] = ACTION_LAYER_MOMENTARY(3),
+  [6] = ACTION_MODS_KEY(MOD_LGUI|MOD_LALT, KC_V),
+  [7] = ACTION_MODS_KEY(MOD_LGUI|MOD_LALT, KC_SCLN),
+  [8] = ACTION_MODS_KEY(MOD_LGUI|MOD_LALT, KC_F)
 };
 
 void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)
