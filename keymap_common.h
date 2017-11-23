@@ -26,7 +26,7 @@ Copyright 2016 Mathieu Bolla <mathieu.bolla@gmail.com>
 #define RALT(key) ACTION(ACT_MODS, (MOD_RALT << 8) | (key))
 
 extern const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
-extern const uint16_t fn_actions[];
+extern const action_t fn_actions[];
 
 #define KEYMAP( \
   K00, K01, K02, K03, K04, K05, K06, K07, K08, K09, K0A, K0B, K0C, \
